@@ -1,2 +1,2 @@
-# chicago6_7_22
+# ChicagoArtInst
 Created with CodeSandbox
