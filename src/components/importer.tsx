@@ -1,7 +1,7 @@
 import { requestOptions } from "../services/requestOptions";
 export let obj: any;
 
-export function Importer() {
+export function importer() {
   const link = "https://api.artic.edu/api/v1/artworks?limit=100";
 
   fetch(link, requestOptions)
