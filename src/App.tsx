@@ -8,8 +8,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { importer } from "./components/importer";
 
 export default function App() {
-  importer();
-
   return (
     <div>
       <Header />
