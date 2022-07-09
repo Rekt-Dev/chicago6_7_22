@@ -7,6 +7,6 @@ export function importer() {
   fetch(link, requestOptions)
     .then((res) => res.json())
     .then((data) => (obj = data))
-    .then(() => console.log(obj));
-  console.log(`this is obj rendered from importer ${obj}`);
+    .then(() => console.log(`this is obj rendered from importer ${obj}`));
+  console.log();
 }
