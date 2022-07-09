@@ -22,6 +22,14 @@ export async function getData() {
     setLoading(true);
     getData();
   }, []);
+  return (
+    <div className="">
+      <header className="">
+        {loading && <img src={logo} className="App-logo" alt="logo" />}
+        {todos && todos.map((todo) => <p key={todo.id}>{todo.title}</p>)}
+      </header>
+    </div>
+  );
 }
 /* export function importer() {
   const link = "https://api.artic.edu/api/v1/artworks?limit=100";
