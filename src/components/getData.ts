@@ -1,4 +1,3 @@
-import { requestOptions } from "../services/requestOptions";
 export let obj: any;
 
 export async function getData() {

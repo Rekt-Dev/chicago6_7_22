@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 import { Card } from "./components/Card";
 import { json } from "./services/json";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { importer } from "./components/importer";
+import { getData } from "./services/getData";
 
 export default function App() {
+
+  getData()
   return (
     <div>
       <Header />
