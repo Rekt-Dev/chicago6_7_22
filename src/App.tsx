@@ -8,8 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { getData } from "./services/getData";
 
 export default function App() {
-
-  getData()
+  //getData()
   return (
     <div>
       <Header />
