@@ -3,7 +3,7 @@ export let obj: any;
 
 export async function getData() {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [jsonData, setJsonData] = useState(false);
 
   try {
     const response = await fetch(
@@ -14,12 +14,12 @@ export async function getData() {
     console.log(e);
   } finally {
     let data1 = data;
-    setLoading(false);
+    setJsonData(false);
     console.log(`this is data1 ${data1}`);
   }
 
   useEffect(() => {
-    setLoading(true);
+    setJsonData(true);
     getData();
   }, []);
   return (
