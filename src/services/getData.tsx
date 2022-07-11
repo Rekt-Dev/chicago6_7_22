@@ -3,7 +3,7 @@ export let obj: any;
 
 export async function getData() {
   const [data, setData] = useState([]);
-  const [jsonData, setJsonData] = useState(false);
+  const [jsonData, setJsonData] = useState([]);
 
   try {
     const response = await fetch(
@@ -14,7 +14,7 @@ export async function getData() {
     console.log(e);
   } finally {
     let data1 = data;
-    setJsonData(false);
+    setJsonData(data);
     console.log(`this is data1 ${data1}`);
   }
 
