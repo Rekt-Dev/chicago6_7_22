@@ -19,7 +19,7 @@ export async function getData() {
   }
 
   useEffect(() => {
-    setJsonData(true);
+    setJsonData();
     getData();
   }, []);
   return (
