@@ -25,7 +25,7 @@ export async function getData() {
   return (
     <div className="">
       <header className="">
-        {loading && <img src={"./loader"} className="App-logo" alt="logo" />}
+        {loading && <img src={"./"} className="App-logo" alt="logo" />}
         {todos && todos.map((todo) => <p key={todo.id}>{todo.title}</p>)}
       </header>
     </div>
