@@ -7,12 +7,11 @@ export async function getData() {
     const response = await fetch(
       "https://api.artic.edu/api/v1/artworks?limit=20"
     );
-    setData(await response.json());
+    let data=(await response.json());
   } catch (e) {
     console.log(e);
   }  
       let data1 = data;
-    setJsonData(data);
     console.log(`this is data1 ${data1}`);
   }
 
