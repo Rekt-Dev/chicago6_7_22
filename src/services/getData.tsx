@@ -6,9 +6,9 @@ export async function getData() {
     );
     data = await response.json();
     let data1 = data;
-    console.log(data1);
-  } catch (e) {
-    console.log(e);
+    console.log(`this is data1${data1}`);
+  } catch (err) {
+    console.log(`this is the error :${err}` );
   }
 
   console.log(`this is data ${data}`);

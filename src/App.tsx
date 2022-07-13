@@ -9,7 +9,6 @@ import { getData } from "./services/getData";
 
 export default function App() {
   console.log(`this is getData ${getData()}`)
-  getData()
   return (
     <div>
       <Header />
