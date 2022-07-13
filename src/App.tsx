@@ -16,6 +16,8 @@ export default function App() {
       <Header />
       <Main />
       <Pagination />
+
+      <Pagination />
     </div>
   );
 }
