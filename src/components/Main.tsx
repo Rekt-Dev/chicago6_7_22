@@ -4,7 +4,7 @@ import { Card } from "./Card";
 export function Main() {
   return (
     <div>
-      <div className="">
+      <div className="center">
         {json.map((obj) => (
           <div className="">
             <Card
