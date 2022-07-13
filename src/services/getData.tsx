@@ -9,7 +9,7 @@ export async function getData() {
     console.log(e);
   }
 
-  console.log(data);
+  console.log(`this is data ${data}`);
 
   return data;
 }
