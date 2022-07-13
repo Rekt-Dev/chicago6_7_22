@@ -6,18 +6,19 @@ import { Card } from "./components/Card";
 import { json } from "./services/json";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { getData, data } from "./services/getData";
-
+import { Main } from "./components/Main";
 export default function App() {
-getData()
+  getData();
   return (
     <div>
       <Header />
-      <Body />
+      <Main />
       <div>
-      <Link to="/2_10">pages : 2-10 | </Link>
-      <Link to="/11_20">pages : 11-20 | </Link>
-      <Link to="/21_30">pages : 21-30 | </Link>
-      <Link to="/31_40">pages : 31-40 | </Link>
-      </div></div>
+        <Link to="/2_10">pages : 2-10 | </Link>
+        <Link to="/11_20">pages : 11-20 | </Link>
+        <Link to="/21_30">pages : 21-30 | </Link>
+        <Link to="/31_40">pages : 31-40 | </Link>
+      </div>
+    </div>
   );
 }
